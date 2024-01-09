@@ -1,11 +1,11 @@
 
-public class Node {
+public class Node<T> {
     
-    private String conteudo; 
-    private Node proximoNo; 
+    private T conteudo; 
+    private Node<T> proximoNo; 
 
 
-    public Node(String conteudo){
+    public Node(T conteudo){
 
         this.proximoNo = null;
         this.conteudo = conteudo;
@@ -13,22 +13,22 @@ public class Node {
 
 
 
-    public String getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
 
-    public Node getProximoNo() {
+    public Node<T> getProximoNo() {
         return proximoNo;
     }
 
 
-    public void setProximoNo(Node proximoNo) {
+    public void setProximoNo(Node<T> proximoNo) {
         this.proximoNo = proximoNo;
     }
 
